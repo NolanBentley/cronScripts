@@ -1,16 +1,19 @@
 #!/bin/bash
 
-##Indicate usage to nolan
+##Setup variables
 currTime=$(date "+%Y/%m/%d @ %h:%M:%S %r")
 currTime2=$(date "+%Y-%m-%d_%H-%M-%S")
 log1=/home/nolan/cronLog.txt
-echo "cron diskInfo script run at $currTime" >> $log1
+ipLogLoc=/home/SharedUser/ipLog/
+
+##Update log
+echo "cron ip log script run at $currTime" >> $log1
 log2=$(tail -n 100 $log1)
 echo $log2 > $log1
 
 
 ## Save and trim ip logs
-cd /home/SharedUser/ipLog/
+cd $ipLogLoc
 cat ipLog.txt > ipLog_prev
 tail -n 20 ipLog.txt  > ipLog_tail
 cat ipLog_tail | awk '!x[$0]++' > ipLog.txt

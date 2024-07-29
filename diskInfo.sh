@@ -1,10 +1,14 @@
 #!/bin/bash
 
-##Indicate usage to nolan
+##Setup variables
+scriptName="disk info script"
 currTime=$(date "+%Y/%m/%d @ %h:%M:%S %r")
 currTime2=$(date "+%Y-%m-%d_%H-%M-%S")
 log1=/home/nolan/cronLog.txt
-echo "cron diskInfo script run at $currTime" >> $log1
+ipLogLoc=/home/SharedUser/ipLog/
+
+##Update log
+echo "cron $scriptName run at $currTime" >> $log1
 log2=$(tail -n 100 $log1)
 echo $log2 > $log1
 
