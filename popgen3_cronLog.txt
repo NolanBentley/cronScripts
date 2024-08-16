@@ -1,0 +1,33 @@
+
+cron disk info script run at 2024/08/16 @ Aug:00:20 04:00:20 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Sent weekly report
+- Grepped SMART value lines: All= 24  vs. Good= 24
+- Grepped Error count lines: All= 12  vs. Good= 12
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/08/16 @ Aug:00:44 04:00:44 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Sent weekly report
+- Grepped SMART value lines: All= 24  vs. Good= 24
+- Grepped Error count lines: All= 12  vs. Good= 12
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/08/16 @ Aug:01:25 04:01:25 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Sent weekly report
+- Grepped SMART value lines: All= 24  vs. Good= 24
+- Grepped Error count lines: All= 12  vs. Good= 12
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!

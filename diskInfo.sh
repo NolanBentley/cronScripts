@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##Customize these per server
-log1=/home/nolan/Experiments/cronScripts/cronLog.txt
+log1=/home/nolan/Experiments/cronScripts/"$HOSTNAME"_cronLog.txt
 muttPath="/home/nolan/.mutt/muttrc"
 emergencyEmails="nolanbentley@utexas.edu, tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
 weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
