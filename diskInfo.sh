@@ -12,9 +12,9 @@ diskInfo=$percPath/diskInfo.txt
 diskHist=$percPath/diskInfoHistory.txt
 diskSummary=$percPath/diskInfoSummary.txt
 diskReport=$percPath/diskReport.txt
-muttPath="/home/nolan/.muttrc"
-emergencyEmails="nolanbentley@utexas.edu, tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
-weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
+muttPath="/home/nolan/.mutt/muttrc"
+emergencyEmails="nolanbentley@utexas.edu" #, tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
+weeklyEmails="nolanbentley@utexas.edu"    #,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
 dailyEmails="nolanbentley@utexas.edu"
 
 ##Update log
