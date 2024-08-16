@@ -43,8 +43,7 @@ grep -E "Drive .* State :|S.M.A.R.T.|Error|Predictive Failure Count|Shield Count
 
 ## Make a report
 day=$(date "+%a")
-echo "<pre>" > $message
-echo "######### Diff report #########">> $message
+echo "######### Diff report #########"> $message
 cat $diskDiff >> $message
 echo "###############################" >> $message
 echo "" >> $message
