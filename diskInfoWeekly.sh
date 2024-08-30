@@ -3,8 +3,8 @@
 ##Customize these per server
 log1=/home/nolan/Experiments/cronScripts/"$HOSTNAME"_cronLog.txt
 muttPath="/home/nolan/.mutt/muttrc"
-emergencyEmails="nolanbentley@utexas.edu, tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
-weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
+emergencyEmails="nolanbentley@utexas.edu,tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu,jebonnette@utexas.edu"
+weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu,jebonnette@utexas.edu"
 dailyEmails="nolanbentley@utexas.edu"
 
 ##Setup variables

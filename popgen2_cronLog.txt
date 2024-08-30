@@ -120,3 +120,13 @@ cron disk info script run at 2024/08/30 @ Aug:01:01 07:01:01 AM:
 - Counted lines in diff (expect 6):  6
 - Overwrote previous files
 - Done!
+
+cron disk info script run at 2024/08/30 @ Aug:00:12 11:00:12 AM:
+- Saved info
+- Made report
+- Sent weekly report
+- Grepped SMART value lines: All= 28  vs. Good= 28
+- Grepped Error count lines: All= 14  vs. Good= 14
+- Counted lines in diff (expect 6):  1368
+- Overwrote previous files
+- Done!
