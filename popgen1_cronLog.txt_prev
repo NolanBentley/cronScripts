@@ -1,0 +1,63 @@
+
+cron disk info script run at 2024/12/04 @ Dec:52:54 04:52:54 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/12/04 @ Dec:53:07 04:53:07 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/12/04 @ Dec:53:12 04:53:12 PM:
+- Saved info
+- Made report
+- Sent weekly report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  812
+- Sent URGENT message regarding Errors!!!!
+- Sent URGENT report regarding diffs!!!
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/12/04 @ Dec:53:40 04:53:40 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/12/04 @ Dec:53:44 04:53:44 PM:
+- Saved info
+- Made report
+- Sent weekly report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  6
+- Sent URGENT message regarding Errors!!!!
+- Overwrote previous files
+- Done!
+
+cron disk info script run at 2024/12/04 @ Dec:59:32 04:59:32 PM:
+- Saved info
+- Made report
+- Sent daily report
+- Grepped SMART value lines: All= 16  vs. Good= 16
+- Grepped Error count lines: All= 8  vs. Good= 7
+- Counted lines in diff (expect 6):  6
+- Overwrote previous files
+- Done!

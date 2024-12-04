@@ -84,10 +84,10 @@ if [ "$ogLEN1" != "$ogLEN2" ] ; then
 fi
 
 ### Send urgent message to maintainer if errors
-if [ "$ogLEN3" != "$ogLEN4" ] ; then
-	cat "$message" | mutt -s "URGENT: Error alert regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$dailyEmails"
-	echo "- Sent URGENT message regarding Errors!!!!" >> $log1
-fi
+#if [ "$ogLEN3" != "$ogLEN4" ] ; then
+#	cat "$message" | mutt -s "URGENT: Error alert regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$dailyEmails"
+#	echo "- Sent URGENT message regarding Errors!!!!" >> $log1
+#fi
 
 ### Send urgent message to maintainer if changed
 if [ "$diffWc" \> 6 ] ; then

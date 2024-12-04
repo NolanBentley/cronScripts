@@ -3,8 +3,8 @@
 ##Customize these per server
 log1=/home/nolan/Experiments/cronScripts/"$HOSTNAME"_cronLog.txt
 muttPath="/home/nolan/.mutt/muttrc"
-emergencyEmails="nolanbentley@utexas.edu, tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
-weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu ,jebonnette@utexas.edu"
+emergencyEmails="nolanbentley@utexas.edu,tjuenger@austin.utexas.edu,li.zhang@austin.utexas.edu,jebonnette@utexas.edu"
+weeklyEmails="nolanbentley@utexas.edu,li.zhang@austin.utexas.edu,jebonnette@utexas.edu"
 dailyEmails="nolanbentley@utexas.edu"
 
 ##Setup variables
@@ -12,12 +12,12 @@ scriptName="disk info script"
 currTime=$(date "+%Y/%m/%d @ %h:%M:%S %r")
 percPath=/opt/MegaRAID/perccli
 percProgram=$percPath/perccli64
-diskInfoFull=$percPath/diskInfo_full.txt
-diskInfo=$percPath/diskInfo.txt
-diskPrev=$percPath/diskPrev.txt
-diskDiff=$percPath/diskDiff.txt
-diskSummary=$percPath/diskInfoSummary.txt
-message=$percPath/dailyMessage.txt
+diskInfoFull=$percPath/diskWeeklyInfo_full.txt
+diskInfo=$percPath/diskWeeklyInfo.txt
+diskPrev=$percPath/diskWeeklyPrev.txt
+diskDiff=$percPath/diskWeeklyDiff.txt
+diskSummary=$percPath/diskWeeklyInfoSummary.txt
+message=$percPath/weeklyMessage.txt
 
 ##Update log
 tail -n 1000 "$log1" > "$log1"_prev
@@ -57,9 +57,9 @@ echo "###############################" >> $message
 echo "############ End ##############" >> $message
 echo "- Made report" >> $log1
 
-## Send report daily
-cat "$message" | mutt -s "Daily report regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$dailyEmails"
-echo "- Sent daily report" >> $log1
+## Send report 
+cat "$message" | mutt -s "Weekly report regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$weeklyEmails"
+echo "- Sent weekly report" >> $log1
 
 ## Check for urgent changes
 ### Check the important rows that I am aware of
@@ -84,10 +84,10 @@ if [ "$ogLEN1" != "$ogLEN2" ] ; then
 fi
 
 ### Send urgent message to maintainer if errors
-#if [ "$ogLEN3" != "$ogLEN4" ] ; then
-#	cat "$message" | mutt -s "URGENT: Error alert regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$dailyEmails"
-#	echo "- Sent URGENT message regarding Errors!!!!" >> $log1
-#fi
+if [ "$ogLEN3" != "$ogLEN4" ] ; then
+	cat "$message" | mutt -s "URGENT: Error alert regarding $HOSTNAME's RAID drives ($currTime)" -F "$muttPath" -- "$dailyEmails"
+	echo "- Sent URGENT message regarding Errors!!!!" >> $log1
+fi
 
 ### Send urgent message to maintainer if changed
 if [ "$diffWc" \> 6 ] ; then
