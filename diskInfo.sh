@@ -9,7 +9,7 @@ dailyEmails="nolanbentley@utexas.edu"
 
 ##Setup variables
 scriptName="disk info script"
-currTime=$(date "+%Y/%m/%d @ %h:%M:%S %r")
+currTime=$(date "+%Y/%m/%d @ %r")
 percPath=/opt/MegaRAID/perccli
 percProgram=$percPath/perccli64
 diskInfoFull=$percPath/diskInfo_full.txt
